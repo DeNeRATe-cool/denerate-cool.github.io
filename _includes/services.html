@@ -1,0 +1,23 @@
+<section aria-labelledby="services">
+  <h2 id="services" class="section-heading">Services</h2>
+  {% if site.data.services.size > 0 %}
+  {% assign service_groups = site.data.services | group_by: 'category' %}
+  {% for group in service_groups %}
+  <div class="service-group">
+    {% if group.name and group.name != '' %}<h3>{{ group.name | escape }}</h3>{% endif %}
+    {% for item in group.items %}
+    <article class="entry">
+      <div class="entry-heading">
+        <h4 class="entry-title">{{ item.role | escape }}</h4>
+        {% if item.period and item.period != '' %}<span class="entry-meta">{{ item.period | escape }}</span>{% endif %}
+      </div>
+      {% if item.organization and item.organization != '' %}<p class="entry-detail">{{ item.organization | escape }}</p>{% endif %}
+      {% if item.description and item.description != '' %}<div class="entry-detail">{{ item.description | markdownify }}</div>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  {% else %}
+  <p class="empty-state">No entries yet.</p>
+  {% endif %}
+</section>

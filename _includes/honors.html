@@ -1,0 +1,19 @@
+<section aria-labelledby="honors">
+  <h2 id="honors" class="section-heading">Honors</h2>
+  {% if site.data.honors.size > 0 %}
+  <ul class="timeline">
+    {% for item in site.data.honors %}
+    <li class="timeline-item">
+      <span class="timeline-date">{{ item.year | escape }}</span>
+      <div class="timeline-body">
+        <h3 class="entry-title">{{ item.title | escape }}</h3>
+        {% if item.organization and item.organization != '' %}<p class="entry-detail">{{ item.organization | escape }}</p>{% endif %}
+        {% if item.description and item.description != '' %}<div class="entry-detail">{{ item.description | markdownify }}</div>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-state">No entries yet.</p>
+  {% endif %}
+</section>

@@ -1,0 +1,13 @@
+# Entries are grouped by category; categories and entries keep their file order.
+# Description is optional and supports Markdown.
+- category: "Teaching"
+  role: "[Teaching role]"
+  organization: "[Course and institution]"
+  period: "[Term or dates]"
+  description: "[Briefly describe your responsibilities.]"
+
+- category: "Leadership"
+  role: "[Leadership role]"
+  organization: "[Organization]"
+  period: "[Term or dates]"
+  description: "[Briefly describe your responsibilities.]"

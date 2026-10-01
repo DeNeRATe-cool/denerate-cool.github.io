@@ -1,0 +1,21 @@
+<section aria-labelledby="education">
+  <h3 id="education" class="section-heading">Education</h3>
+  {% if site.data.education.size > 0 %}
+  {% for item in site.data.education %}
+  {% assign degree = item.degree | default: '' %}
+  {% assign field = item.field | default: '' %}
+  <article class="entry">
+    <div class="entry-heading">
+      <h4 class="entry-title">{{ item.institution | escape }}</h4>
+      {% if item.period and item.period != '' %}<span class="entry-meta">{{ item.period | escape }}</span>{% endif %}
+    </div>
+    {% if degree != '' or field != '' %}
+    <p class="entry-detail">{{ degree | escape }}{% if degree != '' and field != '' %}, {% endif %}{{ field | escape }}</p>
+    {% endif %}
+    {% if item.description and item.description != '' %}<div class="entry-detail">{{ item.description | markdownify }}</div>{% endif %}
+  </article>
+  {% endfor %}
+  {% else %}
+  <p class="empty-state">No entries yet.</p>
+  {% endif %}
+</section>

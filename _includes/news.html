@@ -1,0 +1,15 @@
+<section aria-labelledby="news">
+  <h2 id="news" class="section-heading">News</h2>
+  {% if site.data.news.size > 0 %}
+  <ul class="timeline">
+    {% for item in site.data.news %}
+    <li class="timeline-item">
+      <span class="timeline-date">{{ item.date | escape }}</span>
+      <div class="timeline-body">{{ item.text | markdownify }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-state">No entries yet.</p>
+  {% endif %}
+</section>

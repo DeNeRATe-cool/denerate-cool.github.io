@@ -1,0 +1,15 @@
+# Keep the main list. Replace the example or use main: [] for an empty section.
+# Optional fields: conference_short, pdf, code, page, bibtex, image, image_alt,
+# notes, others. Links may be external URLs or paths such as /assets/files/paper.pdf.
+main:
+  - title: "[Publication title]"
+    authors: "[Author list; use **your name** to highlight it]"
+    conference: "[Venue or publication status], [Year]"
+    conference_short: ""
+    pdf: ""
+    code: ""
+    page: ""
+    bibtex: ""
+    image: ""
+    notes: ""
+    others: ""

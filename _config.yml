@@ -1,0 +1,28 @@
+# Replace the bracketed text with your own details. Leave optional links empty.
+title: "[Your name]"
+position: "[Your position]"
+affiliation: "[Your affiliation]"
+email: ""
+github_link: "https://github.com/DeNeRATe-cool"
+linkedin: ""
+avatar: "/assets/img/avatar.svg"
+avatar_alt: "Profile portrait"
+
+description: "Academic homepage of DeNeRATe-cool."
+url: "https://denerate-cool.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Asia/Taipei"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - AGENTS.md
