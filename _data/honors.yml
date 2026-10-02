@@ -1,5 +1,30 @@
 # Newest entries first. Description is optional and supports Markdown.
-- title: "[Award or honor]"
-  organization: "[Awarding organization]"
-  year: "[Year]"
-  description: ""
+- title: "Ranked 1st in Overall Assessment (2023 Cohort)"
+  organization: "School of Software, Beihang University"
+  year: "Sep. 2026"
+  description: >-
+    GPA: 3.864/4.000.
+    Overall assessment score: 4.074, including bonus points.
+
+- title: "First Prize, Ninebot Scholarship"
+  organization: "Ninebot Limited"
+  year: "Dec. 2025"
+
+- title: "Silver Medal"
+  organization: "2025 ICPC Asia Nanjing Regional Contest"
+  year: "Nov. 2025"
+
+- title: "Grand Prize and Challenge Champion"
+  organization: "19th Challenge Cup, AI Challenge Competition"
+  year: "Oct. 2025"
+
+- title: "National Scholarship (China)"
+  year: "Oct. 2025"
+
+- title: "Gold Medal"
+  organization: "2025 ICPC Wuhan Invitational Contest"
+  year: "Apr. 2025"
+
+- title: "Silver Medal"
+  organization: "2025 ICPC Beijing Invitational Contest"
+  year: "Apr. 2025"

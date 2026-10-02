@@ -1,6 +1,12 @@
 # List entries in the order you want them to appear. Use [] for an empty section.
-- institution: "[University]"
-  degree: "[Degree]"
-  field: "[Field of study]"
-  period: "[Start year] – [End year or Present]"
+- institution: "Tsinghua University"
+  degree: "Incoming Ph.D. Student"
+  field: "School of Software"
+  period: "2027 – Present"
+  description: "Advisor: [Zhenpeng Chen](https://chenzhenpeng18.github.io/)"
+
+- institution: "Beihang University"
+  degree: "Undergraduate Student"
+  field: "School of Software"
+  period: "2022 – Present"
   description: ""

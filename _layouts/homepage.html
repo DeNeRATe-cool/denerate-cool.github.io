@@ -3,35 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title | escape }} · Academic homepage</title>
+    <title>{{ site.title | escape }}'s Homepage</title>
     <meta name="description" content="{{ site.description | escape }}">
     <meta name="color-scheme" content="light dark">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="preload" href="{{ '/assets/fonts/crimson-pro-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
       <aside class="profile" aria-label="Profile">
-        <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.avatar_alt | escape }}" width="144" height="144">
+        <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.avatar_alt | escape }}" width="144" height="144" fetchpriority="high">
         <div class="profile-text">
-          <h1>{{ site.title | escape }}</h1>
-          {% if site.position and site.position != '' %}<p class="profile-position">{{ site.position | escape }}</p>{% endif %}
-          {% if site.affiliation and site.affiliation != '' %}<p class="profile-affiliation">{{ site.affiliation | escape }}</p>{% endif %}
-          <div class="profile-contact">
-            {% if site.email and site.email != '' %}
-            <a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a>
-            {% else %}
-            <span class="placeholder">[Email]</span>
+          <div class="profile-names">
+            <h1 class="profile-name-en">{{ site.title | escape }}</h1>
+            {% if site.name_zh and site.name_zh != '' %}
+            <p class="profile-name-zh" lang="zh-Hans">{{ site.name_zh | escape }}</p>
             {% endif %}
           </div>
-          <div class="social-links" aria-label="Social links">
-            {% if site.github_link and site.github_link != '' %}<a href="{{ site.github_link | escape }}">GitHub</a>{% endif %}
+          {% if site.position and site.position != '' %}<p class="profile-position">{{ site.position | escape }}</p>{% endif %}
+          {% if site.affiliation and site.affiliation != '' %}<p class="profile-affiliation">{{ site.affiliation | escape }}</p>{% endif %}
+          <div class="social-links" role="group" aria-label="Contact links">
+            {% if site.email and site.email != '' %}
+            {% assign email_address = site.email | replace: ' (at) ', '@' | strip %}
+            <a class="social-link" href="mailto:{{ email_address | escape }}" aria-label="Email: {{ email_address | escape }}" title="Email: {{ email_address | escape }}">
+              {% include icons/email.svg %}
+            </a>
+            {% endif %}
+            {% if site.github_link and site.github_link != '' %}
+            <a class="social-link" href="{{ site.github_link | escape }}" aria-label="GitHub" title="GitHub">
+              {% include icons/github.svg %}
+            </a>
+            {% endif %}
             {% if site.linkedin and site.linkedin != '' %}
-            <a href="{{ site.linkedin | escape }}">LinkedIn</a>
-            {% else %}
-            <span class="placeholder">LinkedIn</span>
+            <a class="social-link" href="{{ site.linkedin | escape }}" aria-label="LinkedIn" title="LinkedIn">
+              {% include icons/linkedin.svg %}
+            </a>
             {% endif %}
           </div>
         </div>
@@ -45,7 +54,6 @@
       </aside>
       <main id="main-content" class="content" tabindex="-1">
         {{ content }}
-        <footer class="site-footer">© {{ site.time | date: '%Y' }} {{ site.title | escape }}</footer>
       </main>
     </div>
   </body>

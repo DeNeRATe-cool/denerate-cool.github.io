@@ -5,9 +5,7 @@ layout: homepage
 ## About me
 {: #about-me}
 
-[Write a short introduction: your current position, affiliation, and the questions you work on.]
-
-**Research interests:** [Research area one], [research area two], [research area three].
+I am an undergraduate student at Beihang University and an incoming Ph.D. student at the School of Software, Tsinghua University. My research interests mainly focus on **AI Agent**, **LLM Evaluation**, and **Software Engineering for/with AI**.
 
 {% include education.html %}
 

@@ -1,14 +1,15 @@
 # Replace the bracketed text with your own details. Leave optional links empty.
-title: "[Your name]"
-position: "[Your position]"
-affiliation: "[Your affiliation]"
-email: ""
+title: "Jiayuxuan Yang"
+name_zh: "杨佳宇轩"
+position: "Incoming Ph.D. Student"
+affiliation: "Tsinghua University"
+email: "denerate.cool (at) gmail.com"
 github_link: "https://github.com/DeNeRATe-cool"
-linkedin: ""
-avatar: "/assets/img/avatar.svg"
+linkedin: "https://www.linkedin.com/in/jiayuxuan-yang-801aa73b8/"
+avatar: "/assets/img/avatar-1.jpg"
 avatar_alt: "Profile portrait"
 
-description: "Academic homepage of DeNeRATe-cool."
+description: "Homepage of Jiayuxuan Yang."
 url: "https://denerate-cool.github.io"
 baseurl: ""
 lang: "en"
@@ -26,3 +27,4 @@ exclude:
   - LICENSE
   - vendor
   - AGENTS.md
+  - assets/fonts/README.md

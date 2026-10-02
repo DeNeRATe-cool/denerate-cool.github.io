@@ -1,4 +1,4 @@
-<section aria-labelledby="education">
+<section class="education" aria-labelledby="education">
   <h3 id="education" class="section-heading">Education</h3>
   {% if site.data.education.size > 0 %}
   {% for item in site.data.education %}
@@ -12,7 +12,7 @@
     {% if degree != '' or field != '' %}
     <p class="entry-detail">{{ degree | escape }}{% if degree != '' and field != '' %}, {% endif %}{{ field | escape }}</p>
     {% endif %}
-    {% if item.description and item.description != '' %}<div class="entry-detail">{{ item.description | markdownify }}</div>{% endif %}
+    {% if item.description and item.description != '' %}<div class="entry-description">{{ item.description | markdownify }}</div>{% endif %}
   </article>
   {% endfor %}
   {% else %}

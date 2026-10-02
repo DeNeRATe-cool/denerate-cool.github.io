@@ -5,16 +5,18 @@
   {% for group in service_groups %}
   <div class="service-group">
     {% if group.name and group.name != '' %}<h3>{{ group.name | escape }}</h3>{% endif %}
+    <ul class="service-list">
     {% for item in group.items %}
-    <article class="entry">
-      <div class="entry-heading">
+    <li class="service-item">
+      <div class="service-body">
         <h4 class="entry-title">{{ item.role | escape }}</h4>
-        {% if item.period and item.period != '' %}<span class="entry-meta">{{ item.period | escape }}</span>{% endif %}
+        {% if item.organization and item.organization != '' %}<p class="service-organization">{{ item.organization | escape }}</p>{% endif %}
+        {% if item.description and item.description != '' %}<div class="service-description">{{ item.description | markdownify }}</div>{% endif %}
       </div>
-      {% if item.organization and item.organization != '' %}<p class="entry-detail">{{ item.organization | escape }}</p>{% endif %}
-      {% if item.description and item.description != '' %}<div class="entry-detail">{{ item.description | markdownify }}</div>{% endif %}
-    </article>
+      {% if item.period and item.period != '' %}<span class="service-period">{{ item.period | escape }}</span>{% endif %}
+    </li>
     {% endfor %}
+    </ul>
   </div>
   {% endfor %}
   {% else %}

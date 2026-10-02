@@ -5,17 +5,28 @@
   {% assign image_path = item.image | default: '' | strip %}
   {% assign conference = item.conference | default: '' %}
   {% assign conference_short = item.conference_short | default: '' %}
+  {% assign title_link = item.page | default: '' | strip %}
+  {% if title_link == '' %}{% assign title_link = item.pdf | default: '' | strip %}{% endif %}
+  {% if title_link != '' %}
+  {% assign title_link_prefix = title_link | slice: 0, 2 %}
+  {% unless title_link contains ':' or title_link_prefix == '//' %}{% assign title_link = title_link | relative_url %}{% endunless %}
+  {% endif %}
+  {% assign inline_badge = false %}
+  {% if image_path == '' and conference_short != '' %}{% assign inline_badge = true %}{% endif %}
   <article class="publication entry">
     {% if image_path != '' %}
     {% assign image_prefix = image_path | slice: 0, 2 %}
     {% unless image_path contains '://' or image_prefix == '//' %}{% assign image_path = image_path | relative_url %}{% endunless %}
-    <img class="publication-image" src="{{ image_path | escape }}" alt="{{ item.image_alt | default: '' | escape }}" loading="lazy" decoding="async">
+    <div class="publication-media">
+      <img class="publication-image" src="{{ image_path | escape }}" alt="{{ item.image_alt | default: '' | escape }}" loading="lazy" decoding="async">
+      {% if conference_short != '' %}<span class="publication-badge">{{ conference_short | escape }}</span>{% endif %}
+    </div>
     {% endif %}
     <div class="publication-body">
-      <h3 class="entry-title">{{ item.title | escape }}</h3>
+      <h3 class="entry-title">{% if title_link != '' %}<a href="{{ title_link | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
       {% if item.authors and item.authors != '' %}<div class="publication-authors">{{ item.authors | markdownify }}</div>{% endif %}
-      {% if conference != '' or conference_short != '' %}
-      <p class="publication-venue">{% if conference_short != '' %}<strong>{{ conference_short | escape }}</strong>{% if conference != '' %} · {% endif %}{% endif %}{{ conference | escape }}</p>
+      {% if conference != '' or inline_badge %}
+      <p class="publication-venue">{% if inline_badge %}<span class="publication-badge">{{ conference_short | escape }}</span>{% if conference != '' %} {% endif %}{% endif %}{{ conference | escape }}</p>
       {% endif %}
       {% if item.notes and item.notes != '' %}<div class="entry-detail">{{ item.notes | markdownify }}</div>{% endif %}
       {% capture publication_links %}
@@ -27,7 +38,7 @@
         {% if link_path != '' %}
         {% assign link_prefix = link_path | slice: 0, 2 %}
         {% unless link_path contains ':' or link_prefix == '//' %}{% assign link_path = link_path | relative_url %}{% endunless %}
-        <a href="{{ link_path | escape }}" aria-label="{{ link_parts[1] | escape }}: {{ item.title | escape }}">{{ link_parts[1] }}</a>
+        <a class="publication-link" href="{{ link_path | escape }}" aria-label="{{ link_parts[1] | escape }}: {{ item.title | escape }}">{{ link_parts[1] }}</a>
         {% endif %}
         {% endfor %}
       {% endcapture %}
