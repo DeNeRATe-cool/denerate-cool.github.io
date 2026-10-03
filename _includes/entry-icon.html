@@ -1,0 +1,6 @@
+{% assign icon_path = include.icon | default: '' | strip %}
+{% if icon_path != '' %}
+<span class="entry-icon" aria-hidden="true">
+  <img src="{{ icon_path | relative_url | escape }}" alt="" width="48" height="48" loading="lazy" decoding="async">
+</span>
+{% endif %}

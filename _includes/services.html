@@ -7,13 +7,17 @@
     {% if group.name and group.name != '' %}<h3>{{ group.name | escape }}</h3>{% endif %}
     <ul class="service-list">
     {% for item in group.items %}
-    <li class="service-item">
-      <div class="service-body">
-        <h4 class="entry-title">{{ item.role | escape }}</h4>
-        {% if item.organization and item.organization != '' %}<p class="service-organization">{{ item.organization | escape }}</p>{% endif %}
-        {% if item.description and item.description != '' %}<div class="service-description">{{ item.description | markdownify }}</div>{% endif %}
+    {% assign entry_icon = item.icon | default: '' | strip %}
+    <li class="service-item{% if entry_icon != '' %} entry-with-icon{% endif %}">
+      {% include entry-icon.html icon=entry_icon %}
+      <div class="service-content">
+        <div class="service-body">
+          <h4 class="entry-title">{{ item.role | escape }}</h4>
+          {% if item.organization and item.organization != '' %}<p class="service-organization">{{ item.organization | escape }}</p>{% endif %}
+          {% if item.description and item.description != '' %}<div class="service-description">{{ item.description | markdownify }}</div>{% endif %}
+        </div>
+        {% if item.period and item.period != '' %}<span class="service-period">{{ item.period | escape }}</span>{% endif %}
       </div>
-      {% if item.period and item.period != '' %}<span class="service-period">{{ item.period | escape }}</span>{% endif %}
     </li>
     {% endfor %}
     </ul>

@@ -28,3 +28,6 @@ exclude:
   - vendor
   - AGENTS.md
   - assets/fonts/README.md
+  - assets/icons/README.md
+  - assets/icons/INSTITUTION-SOURCES.md
+  - assets/icons/COMPETITION-SOURCES.md

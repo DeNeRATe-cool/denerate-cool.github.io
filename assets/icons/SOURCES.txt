@@ -28,3 +28,35 @@ Font Awesome code package are included.
 
 GitHub and LinkedIn marks remain trademarks of their respective owners and are
 used only to identify links to those services. No endorsement is implied.
+
+
+Entry glyphs — Phosphor Icons (retrieved 2026-10-03)
+
+Source: https://github.com/phosphor-icons/core
+License: MIT, Copyright (c) 2023 Phosphor Icons.
+The unchanged license text is included as Phosphor-LICENSE.txt.
+
+Files and exact upstream SVGs:
+- teaching.svg: chalkboard-teacher, regular
+  https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/chalkboard-teacher.svg
+- presidium.svg: users-three, regular
+  https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/users-three.svg
+- rank-first.svg: ranking, regular (the central podium includes the number 1)
+  https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/ranking.svg
+- challenge-cup.svg: trophy, regular (a generic award symbol, not an official mark)
+  https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/trophy.svg
+- gold-medal.svg and silver-medal.svg: medal, regular
+  https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/medal.svg
+
+Adaptation: original viewBox and path data retained without redrawing. Added a
+descriptive title and self-contained light/dark colour styles. The medal files
+are optional alternatives; the three ICPC entries display the official ICPC
+mark, with Gold/Silver expressed in their existing titles.
+
+Selection notes:
+Phosphor regular and duotone, Tabler outline, Remix line, Lucide, and Iconoir
+were reviewed. Regular Phosphor was selected for the related teaching/group/
+ranking shapes and its restrained line weight at small sizes. The duotone fills,
+rosette ornaments, and mixed stroke weights were not used in this set.
+References: https://phosphoricons.com/ ; https://tabler.io/icons ;
+https://remixicon.com/ ; https://lucide.dev/ ; https://iconoir.com/

@@ -4,15 +4,19 @@
   {% for item in site.data.education %}
   {% assign degree = item.degree | default: '' %}
   {% assign field = item.field | default: '' %}
-  <article class="entry">
-    <div class="entry-heading">
-      <h4 class="entry-title">{{ item.institution | escape }}</h4>
-      {% if item.period and item.period != '' %}<span class="entry-meta">{{ item.period | escape }}</span>{% endif %}
+  {% assign entry_icon = item.icon | default: '' | strip %}
+  <article class="entry education-entry{% if entry_icon != '' %} entry-with-icon{% endif %}">
+    {% include entry-icon.html icon=entry_icon %}
+    <div class="entry-content">
+      <div class="entry-heading">
+        <h4 class="entry-title">{{ item.institution | escape }}</h4>
+        {% if item.period and item.period != '' %}<span class="entry-meta">{{ item.period | escape }}</span>{% endif %}
+      </div>
+      {% if degree != '' or field != '' %}
+      <p class="entry-detail">{{ degree | escape }}{% if degree != '' and field != '' %}, {% endif %}{{ field | escape }}</p>
+      {% endif %}
+      {% if item.description and item.description != '' %}<div class="entry-description">{{ item.description | markdownify }}</div>{% endif %}
     </div>
-    {% if degree != '' or field != '' %}
-    <p class="entry-detail">{{ degree | escape }}{% if degree != '' and field != '' %}, {% endif %}{{ field | escape }}</p>
-    {% endif %}
-    {% if item.description and item.description != '' %}<div class="entry-description">{{ item.description | markdownify }}</div>{% endif %}
   </article>
   {% endfor %}
   {% else %}

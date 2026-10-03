@@ -1,11 +1,14 @@
+# Optional icon: local SVG path; omit or use "" to hide it.
 # List entries in the order you want them to appear. Use [] for an empty section.
 - institution: "Tsinghua University"
+  icon: "/assets/icons/tsinghua.svg"
   degree: "Incoming Ph.D. Student"
   field: "School of Software"
   period: "2027 – Present"
   description: "Advisor: [Zhenpeng Chen](https://chenzhenpeng18.github.io/)"
 
 - institution: "Beihang University"
+  icon: "/assets/icons/beihang.svg"
   degree: "Undergraduate Student"
   field: "School of Software"
   period: "2022 – Present"

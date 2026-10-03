@@ -1,3 +1,4 @@
+# Optional icon: local SVG path; omit or use "" to hide it.
 # Entries are grouped by category; categories and entries keep their file order.
 # Description is optional and supports Markdown.
 
@@ -5,37 +6,44 @@
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "Fundamentals of Programming, Beihang University"
   period: "Sep. 2026 – Present"
   description: "Expected end date: Jan. 2027."
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "Data Structures and Programming, Beihang University"
   period: "Feb. 2026 – Jun. 2026"
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "Fundamentals of Programming, Beihang University"
   period: "Sep. 2025 – Jan. 2026"
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "Discrete Mathematics, Beihang University"
   period: "Jan. 2025 – Jun. 2025"
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "Fundamentals of Programming, Beihang University"
   period: "Sep. 2024 – Jan. 2025"
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "C Programming, Beihang University"
   period: "Feb. 2024 – Jun. 2024"
 
 - category: "Teaching"
   role: "Teaching Assistant"
+  icon: "/assets/icons/teaching.svg"
   organization: "Fundamentals of Programming, Beihang University"
   period: "Sep. 2023 – Jan. 2024"
 
@@ -43,20 +51,12 @@
 
 - category: "Student Service"
   role: "Presidium Member"
+  icon: "/assets/icons/presidium.svg"
   organization: "Student Union, School of Software, Beihang University"
   period: "Oct. 2025 – Sep. 2026"
 
 - category: "Student Service"
-  role: "Member"
-  organization: "Science and Technology Activities Department, School of Software, Beihang University"
-  period: "Oct. 2024 – Sep. 2025"
-
-- category: "Student Service"
   role: "Presidium Member"
+  icon: "/assets/icons/presidium.svg"
   organization: "Science and Technology Innovation Center, Shijia College, Beihang University"
   period: "Jun. 2023 – May 2024"
-
-- category: "Student Service"
-  role: "Member"
-  organization: "Technology Department, Science and Technology Innovation Center, Shijia College, Beihang University"
-  period: "Sep. 2022 – May 2023"

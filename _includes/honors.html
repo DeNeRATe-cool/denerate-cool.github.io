@@ -1,12 +1,16 @@
 <section aria-labelledby="honors">
   <h2 id="honors" class="section-heading">Honors</h2>
   {% if site.data.honors.size > 0 %}
-  <ul class="timeline">
+  <ul class="honor-list">
     {% for item in site.data.honors %}
-    <li class="timeline-item">
-      <span class="timeline-date">{{ item.year | escape }}</span>
-      <div class="timeline-body">
-        <h3 class="entry-title">{{ item.title | escape }}</h3>
+    {% assign entry_icon = item.icon | default: '' | strip %}
+    <li class="honor-item{% if entry_icon != '' %} entry-with-icon{% endif %}">
+      {% include entry-icon.html icon=entry_icon %}
+      <div class="entry-content">
+        <div class="entry-heading">
+          <h3 class="entry-title">{{ item.title | escape }}</h3>
+          {% if item.year and item.year != '' %}<span class="entry-meta">{{ item.year | escape }}</span>{% endif %}
+        </div>
         {% if item.organization and item.organization != '' %}<p class="entry-detail">{{ item.organization | escape }}</p>{% endif %}
         {% if item.description and item.description != '' %}<div class="entry-detail">{{ item.description | markdownify }}</div>{% endif %}
       </div>
