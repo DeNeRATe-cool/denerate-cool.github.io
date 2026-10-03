@@ -1,7 +1,7 @@
-# Optional icon: local SVG path; omit or use "" to hide it.
+# Optional icon: local SVG or PNG path; omit or use "" to hide it.
 # Newest entries first. Description is optional and supports Markdown.
 - title: "Ranked 1st in Overall Assessment (2023 Cohort)"
-  icon: "/assets/icons/rank-first.svg"
+  icon: "/assets/icons/beihang-software.png"
   organization: "School of Software, Beihang University"
   year: "Sep. 2026"
   description: >-
@@ -19,7 +19,7 @@
   year: "Nov. 2025"
 
 - title: "Grand Prize and Challenge Champion"
-  icon: "/assets/icons/challenge-cup.svg"
+  icon: "/assets/icons/communist-youth-league.png"
   organization: "19th Challenge Cup, AI Challenge Competition"
   year: "Oct. 2025"
 

@@ -1,9 +1,10 @@
 # Competition and company icons
 
-Retrieved or created on 2026-10-03. These are standalone SVGs with no scripts,
-embedded bitmap images, external fonts, or external resource dependencies.
-Brand names and marks identify the organizations associated with the listed
-experience; their inclusion does not imply endorsement.
+Retrieved or created on 2026-10-03. These SVG and PNG assets retain their
+respective vector and raster formats. SVGs are self-contained, with no scripts,
+external fonts, or external resource dependencies. Brand names and marks
+identify the organizations associated with the listed experience; their
+inclusion does not imply endorsement.
 
 ## ICPC — `icpc.svg`
 
@@ -40,9 +41,19 @@ experience; their inclusion does not imply endorsement.
   reserves copyright and trademark rights; no open-source license is claimed
   for this brand mark.
 
-## Challenge Cup — `challenge-cup.svg`
+## Challenge Cup — `communist-youth-league.png`
 
-- Uses the original [Phosphor Regular trophy SVG](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/trophy.svg), with its geometry unchanged. The blue-grey colour adapts to light/dark mode.
-- License: MIT, Copyright (c) 2023 Phosphor Icons. The full text is retained in `Phosphor-LICENSE.txt`. This is a generic award symbol, **not the official Challenge Cup emblem**.
-- Official alternatives were checked: the [official SVG wordmark](https://www.tiaozhanbei.net/static/images/mobile/mobile_header_logo.svg) and the [19th competition's purple wordmark](https://2025.tiaozhanbei.net/all_static/2025guosai/tzb2025/images/tzb_logo.png). Removing the small subtitle from the official SVG leaves the three original calligraphic characters in a roughly 121:27 frame. At 32px wide, they are only about 7px high, too small to read clearly beside an entry title.
-- The Phosphor trophy was selected after comparing actual small-size renders of Phosphor regular/filled, Tabler outline/filled, and Remix line/filled. It shares the same family as the teaching, presidium, and ranking icons; the previous custom gold trophy has been replaced.
+- File: `/assets/icons/communist-youth-league.png`, an unchanged copy of the
+  [transparent PNG on the official Challenge Cup website](https://www.tiaozhanbei.net/static/images/org_logos/gqt.png)
+  (104 × 105 pixels), preserving its original colours and transparency.
+- Identity: the [Communist Youth League emblem](https://www.gqt.org.cn/xxgk/bzbs/202209/t20220921_789669.htm).
+  Its Central Committee is one of the event's joint organizers. This is an
+  organizer's emblem, not a competition-specific logo or a mark identifying
+  the sole awarding body.
+- Event: the 2025年度中国青年科技创新“揭榜挂帅”擂台赛人工智能领域主擂台赛,
+  held on 17–20 October 2025 at East China University of Science and Technology's
+  Xuhui campus in Shanghai. See the [official event report](https://2025.tiaozhanbei.net/d49/article/700/)
+  and [university report](https://news.ecust.edu.cn/2025/1021/c56a194691/page.htm).
+- Rights: use is governed by the [official emblem rules](https://www.gqt.org.cn/tngz/gd/gd_zzgz/202204/t20220424_787483.htm).
+  No open license or third-party authorization is claimed; this source record
+  does not grant permission to use the emblem.

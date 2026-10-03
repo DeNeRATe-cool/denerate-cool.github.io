@@ -22,6 +22,14 @@ their source geometry, proportions, and colors.
 - Rights: the emblem belongs to Beihang University. The source provides no explicit Creative Commons or other open license for the mark; its [terms](https://cdnlogo.com/terms) reserve copyright and trademark rights. Inclusion here identifies the university and does not imply university endorsement or a grant of unrestricted reuse rights.
 - Original viewBox: `0 0 213 213`; original blue is preserved.
 
+## Beihang School of Software — `beihang-software.png`
+
+- Official source page: [Beihang Student Affairs — 北航软件人](https://xsc.buaa.edu.cn/info/1204/6483.htm), published 28 February 2023. It identifies 北航软件人 as the School of Software's official WeChat account and displays its blue-and-green school emblem. The same emblem appears in the [official account directory](https://xsc.buaa.edu.cn/szjy/yxgzh/2.htm).
+- Original file: [transparent PNG hosted by Beihang Student Affairs](https://xsc.buaa.edu.cn/__local/C/E7/C4/530685F7A9120A299A158001455_5A0E3A97_F474.png).
+- Format: 479×479 PNG with alpha, copied byte-for-byte without cropping, tracing, recoloring, or conversion. No verifiable official SVG was located. This is the School of Software emblem, distinct from the university emblem used in Education.
+- Used beside the overall-assessment ranking entry. The existing 28px icon box and first-line alignment apply unchanged.
+- Rights: institutional identity artwork belonging to its rights holder. No open license is asserted; the project's MIT license does not cover this mark.
+
 ## National Emblem of the PRC — `national-scholarship.svg`
 
 - File description and rights statement: [Wikimedia Commons: 中華人民共和國國徽.svg](https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E5%9C%8B%E5%BE%BD.svg).
@@ -34,9 +42,9 @@ their source geometry, proportions, and colors.
 
 ## Local processing
 
-Only XML serialization, whitespace cleanup, and removal of non-rendering editor
+For the three SVG emblems, only XML serialization, whitespace cleanup, and removal of non-rendering editor
 metadata were performed. No paths, coordinates, colors, proportions, or gradient
 definitions were redrawn. All three assets were checked for valid SVG/XML and
 contain no scripts, event handlers, foreign objects, linked resources, or raster
 images. Internal fragment references used by the national emblem's gradients
-and clipping paths are retained.
+and clipping paths are retained. The School of Software PNG is the unmodified official-site download.
