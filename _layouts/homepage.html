@@ -15,7 +15,9 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
       <aside class="profile" aria-label="Profile">
-        <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.avatar_alt | escape }}" width="144" height="144" fetchpriority="high">
+        <div class="avatar-frame">
+          <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.avatar_alt | escape }}" width="160" height="160" fetchpriority="high">
+        </div>
         <div class="profile-text">
           <div class="profile-names">
             <h1 class="profile-name-en">{{ site.title | escape }}</h1>
