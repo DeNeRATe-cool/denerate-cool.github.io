@@ -1,5 +1,11 @@
 # Optional icon: local SVG or PNG path; omit or use "" to hide it.
 # Newest entries first. Description is optional and supports Markdown.
+- title: "National Scholarship (China)"
+  icon: "/assets/icons/national-scholarship.svg"
+  organization: "Central People's Government of the People's Republic of China"
+  year: "Oct. 2026"
+  description: "Academic year 2025–2026."
+
 - title: "Ranked 1st in Overall Assessment (2023 Cohort)"
   icon: "/assets/icons/beihang-software.png"
   organization: "School of Software, Beihang University"
@@ -27,6 +33,7 @@
   icon: "/assets/icons/national-scholarship.svg"
   organization: "Central People's Government of the People's Republic of China"
   year: "Oct. 2025"
+  description: "Academic year 2024–2025."
 
 - title: "Gold Medal"
   icon: "/assets/icons/icpc.svg"

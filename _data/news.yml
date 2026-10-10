@@ -1,15 +1,11 @@
 # Newest entries first. Text supports Markdown, including links.
+- date: "Oct. 11, 2026"
+  text: >-
+    I received the National Scholarship for the 2025–2026 academic year!
+
 - date: "Sep. 29, 2026"
   text: >-
     Can mutation testing help us build better rubrics for LLM evaluation?
     We explore this in our new preprint,
     [Mubric: Mutation Testing-Guided Rubric Generation for LLM Evaluation](https://arxiv.org/abs/2609.37322).
     Check it out on arXiv!
-
-- date: "Jul. 31, 2026"
-  text: >-
-    Could the way we describe tools make AI agents less safe?
-    Our new preprint,
-    [Tool Specifications Matter: Uncovering and Mitigating Safety Risks in AI Agents](https://arxiv.org/abs/2607.29254),
-    investigates this question and explores a way to improve safety.
-    Take a look on arXiv!
